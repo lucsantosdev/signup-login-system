@@ -11,6 +11,10 @@ connect.then(() => {
 
 // schema's creation
 const LoginSchema = new mongoose.Schema({
+    name: {
+        type: String,
+        required: true
+    },
     email: {
         type: String,
         required: true
