@@ -43,6 +43,11 @@ app.post("/signup", async (req, res) => {
     if(existingUser) {
         res.send("This email account already exists. Please choose a different email.")
     } else {
+        // hashing passwords using bcrypt
+        const saltRounds = 10; // number of salt round for bcrypt
+        const hashedPassword = await bcrypt.hash(data.password, saltRounds)
+
+        data.password = hashedPassword // replace the hash password with original password
         // sending data into database
         const userdata = await collection.insertMany(data)
         console.log(userdata)
