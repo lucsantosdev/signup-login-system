@@ -54,6 +54,24 @@ app.post("/signup", async (req, res) => {
     }   
 })
 
+// login user
+app.post("/login", async (req, res) => {
+    try{
+        const check = await collection.findOne({email: req.body.email})
+        if(!check) {
+            res.send("user email cannot found")
+        }
+        // compare the hash password from the database with plain text
+        const isPasswordMatch = await bcrypt.compare(req.body.password, check.password)
+        if(isPasswordMatch) {
+            res.render("home")
+        } else {
+            req.send("wrong password")
+        }
+    } catch {
+        res.send("wrong details. Try again.")
+    }
+})
 
 // choosing port: 3000
 const port = 3000
