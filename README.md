@@ -1,41 +1,51 @@
-# signup-login-system
+# signup-login-system 
+> **Tagline:** This project is a responsive Sing Up-Login system with user authentication.
 
-# Welcome to My Work-in-Progress! ☕
+![Project Presentation](video/presentation.mp4)
 
-## Sit Down, Grab a Coffee ☕
-Hey, you made it here! That's amazing. But before diving into the (still messy) code, how about grabbing a cup of coffee and taking it easy? While you sip your favorite drink, let me tell you a bit about what's going on here.
-
----
-
-## 🚧 Under Construction...
-This project is still in development. But don't worry! I'm smashing my keyboard, debugging impossible lines, and consuming an unhealthy amount of coffee to create something unique.
-
-Want to take a sneak peek at the progress? Feel free to browse through the code, even if it's not quite *"ready for prime time"* yet.
+## 🚀 Project Description  
+This project is a responsive Sing Up-Login system with user authentication using Node JS, Express JS, MongoDB and Bycrypt. This system consists of a registration form page – where the data of registered users is stored in a database –, a login form page and a home page with authenticated access.
 
 ---
 
-## 🛠 What Will This Project Become?
-Imagine something useful, creative, and, of course, charming. Now imagine that I'm still figuring out exactly what that means. Jokes aside, this repository is aiming to become a [signup-login system].
+## ✨ Functionalities  
+- **[Data Storage]:** Through integration with the Mongodb database, it is possible to store the data of registered users (name, email and password). 
+- **[Hash Password]:** for secure password data storage.
+- **[Authenticated Access]:** for secure access for registered users only.
+- **[Responsiveness]:** for access on different devices.  
 
 ---
 
-## 🤔 Want to Contribute?
-Of course you do! I love ideas, suggestions, and a sprinkle of outside creativity. Just remember: the motto here is **"Code fueled by coffee and brains that take breaks."**
-
-How to contribute:
-1. Check out the open issues (if there are any).
-2. Send a creative PR—bonus points if it includes an emoji in the message.
-3. Stay tuned for updates; things change faster than a cup of coffee can cool down.
+## 🛠️ Technologies Used  
+| Technology        | Description         |  
+|--------------------|---------------------|  
+| [Node JS]          | [Backend]      |  
+| [Express JS]          | [Backend]      |  
+| [Mongo DB]          | [Data Base Storage]      |  
+| [Bcrypt]          | [Hash Password]      |  
+| [EJS]          | [Server-side Rendering]      | 
 
 ---
 
-## 💬 Get in Touch
-Feel like chatting, sending a compliment, or even complaining that this README doesn't reveal much? I'm here:
+## 📦 Installation  
+(You must have Node JS previously installed on your machine.)
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/lucsantosdev/signup-login-system.git
+2. Navigate to the project directory:  
+   ```bash
+   cd signup-login-system
+3. Run the project:  
+   ```bash
+   node src/index.js
+
+## 📝 License
+This project is licensed under the MIT License Name. See the LICENSE file for details.
+
+## 💬 Connect with Me
+Follow my journey and other projects on:
 - **Email:** [lucsantosdev@gmail.com](mailto:lucsantosdev@gmail.com)
 - **LinkedIn:** [lucsantosdev](https://github.com/lucsantosdev)
 - **GitHub:** [lucsantosdev](https://github.com/lucsantosdev)
 
----
-
-## Disclaimer
-This README may contain traces of irony, questionable humor, and caffeine. **Use responsibly!**
+🧠 Je 9:23-24
